@@ -11,7 +11,7 @@ class AdminCommand extends Command
 {
     public function __construct(string $name)
     {
-        $description = "admin command for reportsystem";
+        $description = "Manage Reports!";
         $usageMessage = "/reportadmin";
         $aliases = ["reportadm"];
         $this->setPermission("reportsystem.admin");
