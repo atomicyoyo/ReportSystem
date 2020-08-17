@@ -11,7 +11,7 @@ class ReportListCommand extends Command
 {
     public function __construct(string $name)
     {
-        $description = "show you an list of all reports";
+        $description = "List all reports!";
         $usageMessage = "/reportlist";
         $aliases = ["reportlst"];
         $this->setPermission("reportsystem.list");
