@@ -9,5 +9,5 @@ softdepend:
 
 permissions:
   reportsystem.admin:
-    description: open admin ui and report list
+    description: AdminUI (Handle Reports)
     default: op
