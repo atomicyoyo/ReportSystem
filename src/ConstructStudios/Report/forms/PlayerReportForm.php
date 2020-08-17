@@ -27,12 +27,12 @@ class PlayerReportForm extends CustomForm
             $this->pnarr[$player->getName()] = $player->getName();
         }
         $elements = [
-            new Input("reportname", "Report name", "fly hacker..."),
-            new Dropdown("playername", "Choose Player", $this->pnarr),
-            new Input("desc", "Description, what did the player do?"),
-            new Input("notizen", "Notes(discord tag, ...)"),
+            new Input("reportname", "Report name", "Hacker...."),
+            new Dropdown("playername", "Choose a Player", $this->pnarr),
+            new Input("desc", "Description - What happened?"),
+            new Input("notizen", "Extra Notes"),
             new Label("l", "\n"),
-            new Toggle("exit", "§4Dont send and exit", 0)
+            new Toggle("exit", "§cDiscard Report", 0)
         ];
         parent::__construct($title, $elements, function (Player $player, CustomFormResponse $response) : void {
             if($response->getBool("exit") == false){
