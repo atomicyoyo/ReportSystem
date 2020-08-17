@@ -1,8 +1,8 @@
-name: Report
+name: AtomicReports
 main: ConstructStudios\Report\Report
 api: 3.0.0
 version: 0.1
-author: ConstructStudios
+author: Based on ConstructStudios' ReportSystem. Forked and edited by YoYo
 
 softdepend:
   - PixelgamesToDiscord
