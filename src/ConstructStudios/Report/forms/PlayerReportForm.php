@@ -21,7 +21,7 @@ class PlayerReportForm extends CustomForm
      */
     public function __construct()
     {
-        $title = "§cPlayer report";
+        $title = "§cReport a Player!";
         foreach (Report::getInstance()->getServer()->getOnlinePlayers() as $player)
         {
             $this->pnarr[$player->getName()] = $player->getName();
